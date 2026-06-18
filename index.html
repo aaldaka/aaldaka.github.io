@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alya Al — Software Developer & Cybersecurity Enthusiast. Secure systems, real-time apps, and a curiosity for how things break." />
+  <title>Alya Al — Software Developer & Cybersecurity Enthusiast</title>
+
+  <!-- Fonts: Space Grotesk (display) · Inter (body) · JetBrains Mono (utility/code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background glow (the soft coral/rose aurora from the design) -->
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob aurora__blob--rose"></span>
+    <span class="aurora__blob aurora__blob--mauve"></span>
+    <span class="aurora__blob aurora__blob--coral"></span>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-mark">›</span> alya<span class="nav__logo-accent"> aldaka</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#timeline">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+
+        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__intro reveal">
+          <p class="eyebrow">// available for new work</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="grad-text">Alya Aldaka</span>.
+          </h1>
+          <p class="hero__role">Senior Cybersecurity Student · AWS CIC Graduate · Full-Stack Developer</p>
+          <p class="hero__summary">
+            I build secure, full-stack systems — from real-time web apps to AR platforms
+            deployed with AWS. As a senior cybersecurity student and <strong>AWS Cloud Innovation Centre graduate</strong>,
+            I bring both the engineering and the security mindset to everything I ship.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+
+          <ul class="hero__stats">
+            <li><strong>30+</strong><span>Shipped projects</span></li>
+            <li><strong>10+</strong><span>Technologies</span></li>
+            <li><strong>∞</strong><span>Curiosity</span></li>
+          </ul>
+        </div>
+
+        <!-- Profile card. Replace the avatar SVG/initials with your own photo:
+             swap <div class="avatar__art">…</div> for <img src="your-photo.jpg" alt="Alya Al"> -->
+        <div class="hero__card reveal">
+          <div class="avatar">
+            <img class="avatar__art" src="pfp.jpg" alt="Alya Aldaka" />
+          </div>
+          <p class="avatar__caption">// secure by design</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow reveal">// about</p>
+        <h2 class="section__title reveal">A bit about me</h2>
+
+        <div class="about__grid">
+          <div class="about__bio reveal">
+            <p>
+              Senior Cybersecurity student, CPISP scholar, <strong>AWS CIC Graduate</strong>,
+              and Full-Stack Developer. I build across the whole stack — from secure cloud
+              infrastructure to real-time web apps — and I'm particularly drawn to
+              <strong>cybersecurity in financial services</strong> and cloud security at scale.
+            </p>
+            <p>
+              I hold the AWS Certified Cloud Practitioner and Advanced Cybersecurity Risk
+              Management certifications, competed in the NASA Space Apps Challenge, and
+              volunteered at the Arab International Cyber Conference (AICS).
+            </p>
+          </div>
+
+          <!-- Technologies overview -->
+          <div class="about__tech reveal">
+            <h3 class="about__tech-title">Working with</h3>
+            <ul class="tech-list">
+              <li>Go (Golang)</li>
+              <li>Rust</li>
+              <li>Python</li>
+              <li>JavaScript / TypeScript</li>
+              <li>React &amp; Next.js</li>
+              <li>Node.js</li>
+              <li>Flutter / Dart</li>
+              <li>AWS CDK &amp; CloudFormation</li>
+              <li>Docker</li>
+              <li>Burp Suite / Nmap / Wireshark</li>
+              <li>Unity &amp; AR</li>
+              <li>SQL &amp; SQLite</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <p class="eyebrow reveal">// selected work</p>
+        <h2 class="section__title reveal">Featured projects</h2>
+        <p class="section__lead reveal">A mix of security tooling, real-time platforms, and things I built to learn the hard way.</p>
+
+        <!-- Search + filter toolbar -->
+        <div class="proj-toolbar reveal">
+          <div class="proj-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="projSearch" placeholder="Search projects…" aria-label="Search projects" autocomplete="off" />
+          </div>
+          <!-- Filter pills. data-filter must match the tags in each card's data-tags. -->
+          <div class="proj-filters" id="projFilters" role="tablist" aria-label="Filter projects by technology">
+            <button class="pill is-active" data-filter="all">All</button>
+            <button class="pill" data-filter="Rust">Rust</button>
+            <button class="pill" data-filter="JavaScript">JavaScript</button>
+            <button class="pill" data-filter="TypeScript">TypeScript</button>
+            <button class="pill" data-filter="Unity">Unity</button>
+          </div>
+        </div>
+
+        <!-- Count + scroll arrows -->
+        <div class="proj-meta reveal">
+          <p class="proj-count"><span id="projCount">7</span> projects</p>
+          <div class="proj-nav">
+            <button class="proj-arrow" id="projPrev" aria-label="Scroll to previous projects">‹</button>
+            <button class="proj-arrow" id="projNext" aria-label="Scroll to next projects">›</button>
+          </div>
+        </div>
+
+        <div class="proj-track" id="projTrack">
+          <!-- PROJECT 1 -->
+          <!-- PROJECT 1 -->
+          <article class="card project" data-tags="Unity" data-num="01">
+            <header class="project__top">
+              <span class="project__num">01</span>
+              <span class="project__lang">Unity · AR</span>
+            </header>
+            <h3 class="project__title">KyNova — AR K9 Training Platform</h3>
+            <p class="project__desc">
+              Built for the <strong>AWS Cloud Innovation Centre</strong> in collaboration with
+              <strong>Bahrain's Ministry of Interior</strong>. An augmented-reality platform for
+              K9 working-dog handlers — layers scent-detection drills and live progress tracking
+              over the physical environment in real time.
+            </p>
+            <ul class="badges"><li>Unity</li><li>C#</li><li>AR</li><li>AWS</li><li>Ministry of Interior</li></ul>
+            <footer class="project__foot">
+              <a class="project__repo" href="https://hawrafa.github.io/kynova-ar-simulator/#" target="_blank" rel="noopener">View Demo <span aria-hidden="true">→</span></a>
+              <span class="project__updated">Updated recently</span>
+            </footer>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="card project" data-tags="Rust" data-num="02">
+            <header class="project__top">
+              <span class="project__num">02</span>
+              <span class="project__lang">Rust</span>
+            </header>
+            <h3 class="project__title">Ray Tracer</h3>
+            <p class="project__desc">
+              A CPU-based ray tracer built from scratch in Rust — renders scenes with spheres,
+              planes, cubes, and cylinders under multiple light sources with physically-based materials.
+            </p>
+            <ul class="badges"><li>Rust</li><li>Linear Algebra</li><li>BMP Output</li></ul>
+            <footer class="project__foot">
+              <a class="project__repo" href="https://github.com/aaldaka/rt" target="_blank" rel="noopener">View Repo <span aria-hidden="true">→</span></a>
+              <span class="project__updated">Updated recently</span>
+            </footer>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="card project" data-tags="Rust" data-num="03">
+            <header class="project__top">
+              <span class="project__num">03</span>
+              <span class="project__lang">Rust</span>
+            </header>
+            <h3 class="project__title">Smart Road</h3>
+            <p class="project__desc">
+              A traffic intersection simulator built with Rust and SDL2. Spawn vehicles
+              from any direction and watch the smart intersection manage flow without collisions.
+            </p>
+            <ul class="badges"><li>Rust</li><li>SDL2</li><li>Simulation</li></ul>
+            <footer class="project__foot">
+              <a class="project__repo" href="https://github.com/aaldaka/smart-road" target="_blank" rel="noopener">View Repo <span aria-hidden="true">→</span></a>
+              <span class="project__updated">Updated recently</span>
+            </footer>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="card project" data-tags="Rust" data-num="04">
+            <header class="project__top">
+              <span class="project__num">04</span>
+              <span class="project__lang">Rust</span>
+            </header>
+            <h3 class="project__title">Filler</h3>
+            <p class="project__desc">
+              A competitive AI board-filling game where robots race to claim the most territory.
+              Includes Docker-based execution and multiple robot implementations with different strategies.
+            </p>
+            <ul class="badges"><li>Rust</li><li>AI</li><li>Docker</li></ul>
+            <footer class="project__foot">
+              <a class="project__repo" href="https://github.com/aaldaka/filler" target="_blank" rel="noopener">View Repo <span aria-hidden="true">→</span></a>
+              <span class="project__updated">Updated recently</span>
+            </footer>
+          </article>
+
+          <!-- PROJECT 5 -->
+          <article class="card project" data-tags="JavaScript" data-num="05">
+            <header class="project__top">
+              <span class="project__num">05</span>
+              <span class="project__lang">JavaScript</span>
+            </header>
+            <h3 class="project__title">Bomberman DOM</h3>
+            <p class="project__desc">
+              A multiplayer Bomberman clone rendered entirely in the DOM using a custom
+              mini-framework — WebSocket-powered lobby, real-time chat, and multi-player gameplay.
+            </p>
+            <ul class="badges"><li>JavaScript</li><li>WebSockets</li><li>DOM</li></ul>
+            <footer class="project__foot">
+              <a class="project__repo" href="https://github.com/aaldaka/bomberman-dom" target="_blank" rel="noopener">View Repo <span aria-hidden="true">→</span></a>
+              <span class="project__updated">Updated recently</span>
+            </footer>
+          </article>
+
+          <!-- PROJECT 6 -->
+          <article class="card project" data-tags="TypeScript" data-num="06">
+            <header class="project__top">
+              <span class="project__num">06</span>
+              <span class="project__lang">TypeScript</span>
+            </header>
+            <h3 class="project__title">Social Network</h3>
+            <p class="project__desc">
+              A full-featured social platform with profiles, posts, follows, and real-time
+              notifications — built with a TypeScript frontend and a Go backend.
+            </p>
+            <ul class="badges"><li>TypeScript</li><li>Go</li><li>WebSockets</li><li>SQLite</li></ul>
+            <footer class="project__foot">
+              <a class="project__repo" href="https://github.com/aaldaka/social-network" target="_blank" rel="noopener">View Repo <span aria-hidden="true">→</span></a>
+              <span class="project__updated">Updated recently</span>
+            </footer>
+          </article>
+
+          <!-- PROJECT 7 -->
+          <article class="card project" data-tags="Rust" data-num="07">
+            <header class="project__top">
+              <span class="project__num">07</span>
+              <span class="project__lang">Rust</span>
+            </header>
+            <h3 class="project__title">Multiplayer FPS</h3>
+            <p class="project__desc">
+              A real-time multiplayer first-person shooter with a raycasting renderer,
+              minimap, HUD, and client-server networking — built entirely in Rust.
+            </p>
+            <ul class="badges"><li>Rust</li><li>Raycasting</li><li>Networking</li></ul>
+            <footer class="project__foot">
+              <a class="project__repo" href="https://github.com/aaldaka/multiplayer-fps" target="_blank" rel="noopener">View Repo <span aria-hidden="true">→</span></a>
+              <span class="project__updated">Updated recently</span>
+            </footer>
+          </article>
+        </div>
+
+        <!-- Empty state when search/filter matches nothing -->
+        <p class="proj-empty" id="projEmpty" hidden>No projects match that filter yet.</p>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="eyebrow reveal">// toolkit</p>
+        <h2 class="section__title reveal">Skills &amp; technologies</h2>
+        <p class="section__lead reveal">Grouped by where they show up in my day-to-day.</p>
+
+        <div class="skills">
+          <div class="card skill-card reveal">
+            <h3 class="skill-card__title"><span class="skill-card__dot"></span>Languages</h3>
+            <ul class="badges badges--lg">
+              <li>Go</li><li>JavaScript</li><li>TypeScript</li><li>Rust</li><li>Python</li><li>Java</li><li>C#</li><li>Dart</li><li>PHP</li><li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card reveal">
+            <h3 class="skill-card__title"><span class="skill-card__dot"></span>Web Development</h3>
+            <ul class="badges badges--lg">
+              <li>React.js</li><li>Next.js</li><li>Node.js</li><li>Tailwind CSS</li><li>Bulma CSS</li><li>HTML / CSS</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card reveal">
+            <h3 class="skill-card__title"><span class="skill-card__dot"></span>Backend &amp; Data</h3>
+            <ul class="badges badges--lg">
+              <li>Go</li><li>Rust</li><li>WebSockets</li><li>SQLite</li><li>REST</li><li>GraphQL</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card reveal">
+            <h3 class="skill-card__title"><span class="skill-card__dot"></span>Security &amp; Networking</h3>
+            <ul class="badges badges--lg">
+              <li>Burp Suite</li><li>Nmap</li><li>Wireshark</li><li>Metasploit</li><li>Cisco Packet Tracer</li><li>Vulnerability Assessment</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card reveal">
+            <h3 class="skill-card__title"><span class="skill-card__dot"></span>Cloud &amp; Infrastructure</h3>
+            <ul class="badges badges--lg">
+              <li>AWS CDK</li><li>CloudFormation</li><li>Docker</li><li>Oracle VM</li><li>Cloud Security</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card reveal">
+            <h3 class="skill-card__title"><span class="skill-card__dot"></span>Creative &amp; Mobile</h3>
+            <ul class="badges badges--lg">
+              <li>Unity</li><li>AR</li><li>Flutter</li><li>C#</li><li>UI design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE / EDUCATION TIMELINE ============ -->
+    <section class="section section--alt" id="timeline">
+      <div class="container">
+        <p class="eyebrow reveal">// path</p>
+        <h2 class="section__title reveal">Experience &amp; education</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <p class="timeline__date">2025 — 2026</p>
+            <h3 class="timeline__role">AWS CIC Program · Senior Capstone</h3>
+            <p class="timeline__org">AWS Cloud Innovation Centre × Ministry of Interior</p>
+            <p class="timeline__desc">
+              Designed secure cloud architecture for the Ministry of Interior's AR Police Dog
+              Facility Simulator using AWS CDK and CloudFormation, with automated compliance
+              controls and Infrastructure-as-Code.
+            </p>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <p class="timeline__date">Jun 2024 — Jun 2026</p>
+            <h3 class="timeline__role">Full-Stack Developer</h3>
+            <p class="timeline__org">Reboot Coding Institute</p>
+            <p class="timeline__desc">
+              Intensive full-stack programme building production-grade projects in Go, Rust,
+              JavaScript, and TypeScript — covering real-time systems, security hardening,
+              and low-level systems programming.
+            </p>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <p class="timeline__date">2022 — Aug 2026</p>
+            <h3 class="timeline__role">B.Sc. Cybersecurity</h3>
+            <p class="timeline__org">University of Bahrain</p>
+            <p class="timeline__desc">
+              Senior-year student (Second Class Honours). CPISP scholar. Coursework spans
+              network security, cryptography, penetration testing, and cloud security.
+            </p>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <p class="timeline__date">2021</p>
+            <h3 class="timeline__role">Principles of Management &amp; Leadership · CMI Level 3</h3>
+            <p class="timeline__org">Chartered Management Institute</p>
+            <p class="timeline__desc">
+              Completed leadership certification designed for aspiring first-line managers.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact__intro reveal">
+          <p class="eyebrow">// get in touch</p>
+          <h2 class="section__title">Let's build something secure</h2>
+          <p class="section__lead">
+            For collaborations or enquiries, reach out — I'll get back to you.
+          </p>
+        </div>
+
+        <!-- Contact form powered by FormSubmit (https://formsubmit.co)
+             STEP 1: Replace your-email@example.com below with your real email.
+             STEP 2: On your first real submission, FormSubmit emails you a link to
+                     confirm the address. Click it once and the form goes live. -->
+        <form class="contact__form card reveal"
+              action="https://formsubmit.co/alyaaldaka08@gmail.com"
+              method="POST">
+          <!-- Optional FormSubmit settings -->
+          <input type="hidden" name="_subject" value="New message from your portfolio" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <!-- Honeypot to reduce spam -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@email.com" required />
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-mark">›</span> alya<span class="nav__logo-accent"> aldaka</span>
+      </a>
+
+      <!-- Replace # with your real profile URLs -->
+      <nav class="footer__social" aria-label="Social links">
+        <a href="https://github.com/aaldaka" target="_blank" rel="noopener" aria-label="GitHub / Gitea">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/alya-aldaka" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.4 8.4h4.96V24H.4V8.4zm7.54 0h4.75v2.13h.07c.66-1.25 2.28-2.57 4.69-2.57 5.01 0 5.94 3.3 5.94 7.6V24h-4.96v-6.92c0-1.65-.03-3.78-2.3-3.78-2.3 0-2.66 1.8-2.66 3.66V24H7.94V8.4z"/></svg>
+        </a>
+        <a href="#contact" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 4.2V18h16V8.2l-8 5-8-5zM4 6l8 5 8-5H4z"/></svg>
+        </a>
+      </nav>
+
+      <a class="footer__resume" href="resume.pdf" target="_blank" rel="noopener">Download CV ↓</a>
+      <p class="footer__copy">© <span id="year"></span> Alya Aldaka. Built from scratch — HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
