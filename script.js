@@ -85,9 +85,11 @@
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
 
-    // Stagger items inside the same container for a nicer cascade
-    revealEls.forEach(function (el, i) {
-      el.style.transitionDelay = (i % 6) * 60 + "ms";
+    // Stagger siblings within the same parent for a cascade, not across sections
+    revealEls.forEach(function (el) {
+      var siblings = el.parentElement ? el.parentElement.querySelectorAll(".reveal") : [];
+      var idx = Array.prototype.indexOf.call(siblings, el);
+      el.style.transitionDelay = Math.min(idx, 5) * 60 + "ms";
       observer.observe(el);
     });
   }
@@ -173,7 +175,19 @@
     applyFilters();
   }
 
-  /* ---------- 6. Footer year ---------- */
+  /* ---------- 6. Contact form: sending state ---------- */
+  var contactForm = document.querySelector(".contact__form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function () {
+      var btn = contactForm.querySelector('button[type="submit"]');
+      if (!btn) return;
+      btn.classList.add("is-loading");
+      btn.disabled = true;
+      btn.innerHTML = '<span class="spinner" aria-hidden="true"></span> Sending…';
+    });
+  }
+
+  /* ---------- 7. Footer year ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
